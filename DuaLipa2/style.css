@@ -1,0 +1,178 @@
+*{
+	margin:0;
+	padding: 0;
+}
+html{
+	scroll-behavior: smooth;
+	font-family: 'Montserrat', sans-serif;
+}
+header{
+	margin-top: -1px;
+	position: relative;
+}
+header img{
+	width: 100%;
+}
+@font-face{
+	font-family: 'RoadRage';
+	src: url('Road_Rage.otf') format('opentype');
+}
+@font-face{
+	font-family: 'Sofia';
+	src: url('sofia.otf') format('opentype');
+}
+.logo{
+	left: 0;
+	margin-top: -15px;
+	margin-bottom: -70px;
+	height: auto;
+	width: 100%;
+	padding-right: 50px;
+	position: absolute;
+}
+.nav{
+	z-index: 1;
+	padding: 15px 0px 20px 0px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    font-size: 20px;
+    margin-left: 0;
+}
+.nav .linkk{
+	text-align: center;
+}
+.nav .icon{
+	margin-top: -15px;
+	display: none;
+}
+.nav a{
+	padding: 0px 20px;
+	font-size: 15px;
+	font-family: 'Sofia';
+	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
+	color: #fff;
+}
+.nav .hvr:hover{
+	text-decoration: none;
+	color: inherit;
+	background-color: rgba(218,126,174,0.8);
+	border-radius: 25px;
+	color: #fff;
+}
+header .watch {
+	position: absolute;
+	z-index: 1;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.header .watch a{	
+	padding: 10px;
+	border-radius: 25px;
+	text-decoration: none;
+	color: inherit;
+	color: #fff;
+	background-color: rgba(218,126,174,0.8);
+}
+.header .watch a:hover{
+	background-color: rgba(1,72,98,0.8);
+	color: #fff;
+}
+
+.about {
+	margin-top: -5px;
+	min-height: 650px;
+	background-image: linear-gradient(rgb(5,113,146),rgb(255,105,180)); 
+	display: flex;
+	padding-top: 120px;
+}
+.about .foto img{
+	height: auto;
+	width: 100%;
+}
+.about .foto {
+	padding-right: 120px;
+	width: 30%;
+}
+.about .text {
+	width: 40%;
+}
+.text {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+.about .text h1 {
+	font-size: 70px;
+	color: rgb(255,105,180);
+}
+.about .text p{
+	color: #fff;
+	font-size: 20px;
+	text-align: justify;
+}
+.about .text a{
+	text-decoration: none;
+	color: inherit;
+	background-color: #fff;
+	color: rgb(255,105,180);
+	font-size: 30px;
+	padding: 10px;
+	border-radius: 25px;
+}
+.home .about .text a:hover{
+	background-color: rgba(1,72,98,0.8);
+	color: #fff;
+}
+.video {
+	background: url(image/videohome.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.video video {
+	padding: 150px 30px 120px 30px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 70%;
+}
+@media screen and (max-width: 700px) {
+
+  	.nav .linkk a {display: none;}
+  	.nav a.icon {
+    	float: right;
+    	display: block;
+  	}
+  	.nav a {
+  		padding: 10px;
+  		text-align: center;
+  	}
+  	.nav .logoo .lg .logo{
+  		padding: 0;
+  	}
+
+
+}
+
+@media screen and (max-width: 700px) {
+  .nav.responsive {
+  	position: fixed;
+  	background-color: rgba(1,72,98,0.8);
+  }
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}

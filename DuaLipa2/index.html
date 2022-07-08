@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dua Lipa</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="nav" id="nav">
+		<div class="logoo">
+			<a href="#header" class="lg" onclick="showHome()"><img src="image/homemenu.png" class="logo"></a>
+		</div>
+		<div class="linkk">
+			<a class="hvr" href="#about">about</a>
+			<a class="hvr" href="#">music</a>
+			<a class="hvr" href="#">merchandise</a>
+			<a href="javascript:void(0);" class="icon" onclick="HideNavbar()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+	</div>
+	<div id="home">
+		<header class="header" id="header">
+			<img src="image/home.jpg" alt="image">
+			<div class="watch">
+				<a href="#vd">WATCH NOW!</a>
+			</div>
+		</header>
+		<section class="about" id="about">
+			<div class="text">
+				<h1>About <br> DUA <br> LIPA</h1>
+				<br>
+				<p>Dua Lipa is a British-Kosovan singer/songwriter and model. Born in London on 22 August 1995, she moved to Kosovo with her family at the age of 10 before returning to London at the age of 15. That year, she decided to pursue a career in music and began posting covers of herself singing everything from Christina Aguilera and Joss Stone, to Chance The Rapper songs on Youtube. In 2015, she was signed to Warner Bros. </p>
+				<br>
+				<br>
+				<a href="#abt" onclick="showAbout()"> MORE INFO </a>
+			</div>
+			<div class="foto">
+				<img src="image/fotohome1.jpg" class="fotoAbout">
+			</div>
+		</section>
+		<section class="video" id="video">
+			<video controls="controls" autoplay="autoplay" id="vd">
+				<source src="DuaLipa.mp4" type="video/mp4">
+			</video>
+		</section>
+	</div>
+	<div id="abt" style="display: none">
+	</div>
+	<script type="text/javascript">
+		function HideNavbar() {
+		var x = document.getElementById("nav");
+		  if (x.className === "nav") {
+		    x.className += " responsive";
+		  } else {
+		    x.className = "nav";
+		  }
+		}
+		function showAbout(){
+			document.getElementById("home").style.display = "none";
+			document.getElementById("abt").style.display = "block";
+
+		}
+		function showHome(){
+			document.getElementById("home").style.display = "";
+			document.getElementById("abt").style.display = "none";
+		}
+	</script>
+</body>
+</html>
